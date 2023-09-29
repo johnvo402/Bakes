@@ -1,36 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+@font-face {
+    font-family: sfu-font;
+    src: url('../font/sfu/SFUFuturaBook.TTF') format('truetype');
+    font-weight: normal;
+}
 
 * {
     padding: 0;
     margin: 0;
     color: #454545;
+    background-color: #FFFDFB;
 }
 
+
 header {
+
     height: 150px;
-    background-color: #FFFDFB;
+
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
+.row {
+    width: 88%;
+}
+
 .header-logo {
+
     width: 310px;
     height: 83px;
 }
 
-.header-logo img {
-    width: 100%;
-    
+.left {
+    display: flex;
+    align-items: center;
 }
 
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
 
-nav li {
+.header-logo img {
+    width: 100%;
 
-    display: inline;
+}
+
+.header-contact ul {
+    flex-direction: row-reverse;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 header ul {
+    margin: 0;
+    line-height: 83px;
     display: flex;
     list-style-type: none;
 
@@ -40,7 +70,9 @@ nav li a {
     text-decoration: none;
     padding: 0 10px;
     color: #9D503B;
-    font-size: 28px;
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -50,6 +82,7 @@ nav li a {
 }
 
 .banner {
+    position: relative;
     height: 750px;
 
 }
@@ -58,23 +91,50 @@ nav li a {
     width: 100%;
     height: 750px;
     object-fit: cover;
-    
+
 }
 
+.change-right {
+    right: 5%;
+    line-height: 100%;
+    top: 50%;
+    position: absolute;
+    display: inline;
+}
+
+.change-left {
+    left: 5%;
+    line-height: 100%;
+    top: 50%;
+    position: absolute;
+    display: inline;
+}
+
+.four-dot {
+    right: 46%;
+    line-height: 100%;
+    bottom: 5%;
+
+    position: absolute;
+    display: inline;
+}
+
+.mooncake {
+    padding-bottom: 144px;
+}
 
 .main-title h1 {
     margin: 150px 0px 99px 0;
-    
     font-size: 120px;
     font-style: normal;
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 400;
     line-height: normal;
     text-align: center;
-    color: var(--MU-PH, #9B4D35);
+    color: #9B4D35;
 }
 
-.main-product {
+.mooncake-product {
     display: flex;
     justify-content: center;
 }
@@ -92,9 +152,8 @@ nav li a {
 .product-title {
     margin-top: 46px;
     text-align: center;
-    /* nội dung */
-    font-family: SFU Futura;
-    font-size: 25px;
+    font-family: sfu-font;
+    font-size: 26px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -103,11 +162,301 @@ nav li a {
 .product-price {
     margin-top: 15px;
     text-align: center;
-    color: var(--MU-CHNH, #DA5036);
-    /* nội dung */
-    font-family: SFU Futura;
+    color: #DA5036;
+    font-family: sfu-font;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.bestseller {
+    display: flex;
+    justify-content: flex-end;
+    padding: 165px 0 143px 0;
+
+}
+
+.bestseller .main-title h1 {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.bestseller .main-title {
+    padding-right: 300px;
+}
+
+.product-list {
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list-small {
+    display: flex;
+
+}
+
+.product-list .product {
+    margin-bottom: 160px;
+}
+
+.text {
+    width: 514px;
+    height: 151px;
+    flex-shrink: 0;
+
+}
+
+.text p {
+    color: #454545;
+    text-align: justify;
+    font-family: sfu-font;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main-about {
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 300px;
+}
+
+.main-about .text {
+    width: 709px;
+    height: 297px;
+    flex-shrink: 0;
+}
+
+.about-img {
+    width: 624px;
+    height: 779px;
+    flex-shrink: 0;
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.our-product-item .product {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.our-product-title p {
+    background-color: initial;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.our-product-title {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: sfu-font;
+    font-size: 26px;
+    font-weight: 400;
+    bottom: 5px;
+
+    background-color: initial;
+}
+
+.our-product-item,
+.our-product {
+    margin-bottom: 100px;
+}
+
+.branch {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.branch-odd {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+}
+
+.branch-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 808px;
+    height: 584px;
+    flex-shrink: 0;
+}
+
+.title h3 {
+    color: #9D503B;
+    text-align: center;
+    font-family: sfu-font;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.address p {
+    color: #454545;
+    text-align: center;
+    font-family: sfu-font;
+    font-size: 26px;
+    line-height: 52px;
+}
+
+.branch-img {
+    width: 808px;
+    height: 584px;
+    flex-shrink: 0;
+}
+
+.branch-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.branch-even {
+    display: flex;
+    justify-content: center;
+}
+
+.motto {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.motto-content {
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.motto-img {
+    margin: 100px 0 50px 0;
+
+    height: 57px;
+    flex-shrink: 0;
+}
+
+.motto-img img {
+    text-align: center;
+    height: 100%;
+}
+
+.motto-text {
+    text-align: center;
+}
+
+.motto-text h3 {
+    color: #9B4D35;
+    font-family: sfu-font;
+    font-size: 30px;
+}
+
+.motto-text p {
+    color: #454545;
+    font-family: sfu-font;
+    font-size: 25px;
+}
+
+.foundation {}
+
+.main-title {}
+
+.foundation .text {
+    width: 100%;
+
+}
+
+.foundation .text p {
+    text-align: center;
+}
+
+.foundation-img {
+    height: 380px;
+    margin-bottom: 50px;
+}
+
+.foundation-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #F9F6F2;
+    padding: 150px 0;
+    position: relative;
+}
+
+.footer-text {
+    background-color: #F9F6F2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content {
+    width: 25%;
+    background-color: #F9F6F2;
+}
+
+.footer-content h3 {
+    padding-bottom: 40px;
+    background-color: #F9F6F2;
+    color: #9D503B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.footer-dec {
+    background-color: #F9F6F2;
+    color: var(--Nd-footer, #CB9587);
+    text-align: justify;
+    font-family: sfu-font;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer-dec p {
+    background-color: #F9F6F2;
+    color: var(--Nd-footer, #CB9587);
+}
+
+.f-about {
+    width: 387px;
+}
+.footer-logo img {
+    width: 100%;
+    background-color: #F9F6F2;
+}
+.footer-logo {
+    left: 10%;
+    bottom: 10%;
+    position: absolute;
+    width: 560px;
+    height: 149px;
+    flex-shrink: 0;
+}
+
+.line {
+    padding: 50px 0 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.line div {
+    text-align: center;
+    display: inline;
+    width: 344px;
+    height: 2px;
+    background-color: #CB9587;
 }

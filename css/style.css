@@ -11,14 +11,16 @@
     padding: 0;
     margin: 0;
     color: #454545;
+
+}
+
+main {
     background-color: #FFFDFB;
 }
 
-
 header {
-
+    background-color: #FFFDFB;
     height: 150px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +57,6 @@ header {
     margin: 0;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header ul {
@@ -63,7 +64,6 @@ header ul {
     line-height: 83px;
     display: flex;
     list-style-type: none;
-
 }
 
 nav li a {
@@ -84,14 +84,12 @@ nav li a {
 .banner {
     position: relative;
     height: 750px;
-
 }
 
 .banner img {
     width: 100%;
     height: 750px;
     object-fit: cover;
-
 }
 
 .change-right {
@@ -114,7 +112,6 @@ nav li a {
     right: 46%;
     line-height: 100%;
     bottom: 5%;
-
     position: absolute;
     display: inline;
 }
@@ -154,9 +151,6 @@ nav li a {
     text-align: center;
     font-family: sfu-font;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .product-price {
@@ -165,16 +159,12 @@ nav li a {
     color: #DA5036;
     font-family: sfu-font;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .bestseller {
     display: flex;
     justify-content: flex-end;
     padding: 165px 0 143px 0;
-
 }
 
 .bestseller .main-title h1 {
@@ -197,7 +187,6 @@ nav li a {
 
 .product-list-small {
     display: flex;
-
 }
 
 .product-list .product {
@@ -264,7 +253,6 @@ nav li a {
     font-size: 26px;
     font-weight: 400;
     bottom: 5px;
-
     background-color: initial;
 }
 
@@ -284,7 +272,6 @@ nav li a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-
 }
 
 .branch-content {
@@ -342,7 +329,6 @@ nav li a {
 
 .motto-img {
     margin: 100px 0 50px 0;
-
     height: 57px;
     flex-shrink: 0;
 }
@@ -368,13 +354,8 @@ nav li a {
     font-size: 25px;
 }
 
-.foundation {}
-
-.main-title {}
-
 .foundation .text {
     width: 100%;
-
 }
 
 .foundation .text p {
@@ -426,6 +407,7 @@ footer {
     font-size: 20px;
     font-weight: 400;
 }
+
 .footer-dec p {
     background-color: #F9F6F2;
     color: var(--Nd-footer, #CB9587);
@@ -434,10 +416,12 @@ footer {
 .f-about {
     width: 387px;
 }
+
 .footer-logo img {
     width: 100%;
     background-color: #F9F6F2;
 }
+
 .footer-logo {
     left: 10%;
     bottom: 10%;

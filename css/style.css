@@ -127,11 +127,16 @@ nav li a {
 }
 
 .four-dot {
-    right: 46%;
+    text-align: center;
+    width: 100%;
     line-height: 100%;
     bottom: 5%;
     position: absolute;
-    display: inline;
+    display: block;
+}
+
+.four-dot svg {
+    text-align: center;
 }
 
 .mooncake {

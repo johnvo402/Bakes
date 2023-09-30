@@ -455,6 +455,20 @@ footer {
     flex-shrink: 0;
 }
 
+.chat {
+    position: fixed;
+    z-index: 2;
+    right: 100px;
+    bottom: 100px;
+    width: 90px;
+    height: 90px;
+    background-color: #7B3823;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 .line {
     padding: 50px 0 16px 0;
     display: flex;

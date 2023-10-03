@@ -91,7 +91,10 @@ nav li a {
     font-size: 1em;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+}
 
+nav li a:hover {
+    color: #E4937D;
 }
 
 .header-contact {
@@ -440,7 +443,7 @@ footer {
 }
 
 .footer-dec p {
-    line-height: 40px;
+    line-height: 28px;
     color: var(--text-color-footer);
 }
 

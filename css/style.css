@@ -491,7 +491,7 @@ footer {
     background-color: #CB9587;
 }
 
-@media screen and (max-width: 1920px) and (min-width: 1021px) {
+@media screen and (max-width: 1919px) {
     :root {
         --background-color: #FFFDFB;
         --price-color: #DA5036;

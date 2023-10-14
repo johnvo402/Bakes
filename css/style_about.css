@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@font-face {
+    font-family: sfu-font;
+    src: url('../font/sfu/SFUFuturaRegular.TTF') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: Carter;
+    src: url('../font/Certer/CarterOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --background-color: #FFFDFB;
+    --price-color: #DA5036;
+    --text-color: #454545;
+    --title-color: #9B4D35;
+    --title-color-footer: #9D503B;
+    --text-color-footer: #CB9586;
+    --background-color-footer: #F9F6F2;
+    --font-size-menu: 26px;
+    --font-size-title: 120px;
+    --font-text: 25px;
+    --font-small-title: 30px;
+    --font-title-footer: 26px;
+    --font-text-footer: 20px;
+    --font-phay: 200px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--text-color);
+
+}
+
+main {
+    background-color: var(--background-color);
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .row {
+    width: 88%;
+}
+
+.header-logo {
+    width: 30%;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 100%;
+
+}
+
+.header-contact ul {
+    flex-direction: row-reverse;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    line-height: 83px;
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: var(--font-size-menu);
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #9D503B;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li a:hover {
+    color: #E4937D;
+}
+
+.header-contact {
+    width: 310px;
+    height: 83px;
+}
+
+/*banner*/
+.banner {
+    position: relative;
+}
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(270deg, rgba(9, 9, 9, 0.83) 0.48%, rgba(45, 43, 43, 0.00) 103.82%);
+}
+
+.banner .banner-content {
+    position: absolute;
+    z-index: 3;
+    top: 35%;
+    left: 10%;
+}
+
+.banner .banner-content h1 {
+    margin: 0;
+}
+.banner img {
+    width: 100%;
+}
+.banner .banner-content h1 {
+    font-weight: 500;
+    color: #FFFDFB;
+    letter-spacing: 7.68px;
+}
+/*for title*/
+.main-title h1 {
+    margin: 150px 0px 99px 0;
+    font-size: var(--font-size-title);
+    font-style: normal;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: var(--title-color);
+}
+
+/* our-story */
+.our-story{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.our-story-img{
+    width: 50%;
+}
+
+.our-story-img img {
+    width: 100%;
+}
+.our-story .main-title{
+    width: 50%;
+}
+.our-story .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text p {
+    width: 80%;
+    text-align: center;
+    font-family: sfu-font;
+    font-size: var(--font-text);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.our-story .phay {
+    font-family: Carter;
+    font-size: var(--font-phay);
+    font-weight: 400;
+    line-height: 100px;
+    text-align: start;
+    color: var(--title-color);
+}
+
+
+.our-story .phay-duoi {
+    transform: scale(-1,-1);
+}
+
+.about-content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+footer {
+    background-color: var(--background-color-footer);
+    padding: 150px 0 50px 0;
+    margin-top: 100px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+}
+
+.footer-content {
+    width: 22%;
+}
+
+.footer-content h3 {
+    color: var(--title-color-footer);
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--font-title-footer);
+    font-weight: 600;
+}
+
+.footer-dec {
+    color: var(--text-color-footer);
+    text-align: justify;
+    font-family: sfu-font;
+    font-size: var(--font-text-footer);
+    font-weight: 400;
+}
+
+.footer-dec p {
+    line-height: 28px;
+    color: var(--text-color-footer);
+}
+
+.f-about p {
+    line-height: normal;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-logo {
+    left: 0;
+    bottom: -5%;
+    position: absolute;
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.chat {
+    position: fixed;
+    z-index: 2;
+    right: 100px;
+    bottom: 100px;
+    width: 90px;
+    height: 90px;
+    background-color: #7B3823;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.line {
+    padding: 50px 0 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.line div {
+    text-align: center;
+    display: inline;
+    width: 344px;
+    height: 2px;
+    background-color: #CB9587;
+}
+
+@media screen and (max-width: 1919px) {
+    :root {
+        --background-color: #FFFDFB;
+        --price-color: #DA5036;
+        --text-color: #454545;
+        --title-color: #9B4D35;
+        --title-color-footer: #9D503B;
+        --text-color-footer: #CB9586;
+        --background-color-footer: #F9F6F2;
+        --font-size-menu: 16px;
+        --font-size-title: 80px;
+        --font-text: 18px;
+        --font-small-title: 20px;
+        --font-title-footer: 16px;
+        --font-text-footer: 13px;
+        --font-phay: 150px;
+    }
+    header {
+        height: 100px;
+    }
+}
+
+@media (min-width: 1919px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1720px !important;
+    }
+}

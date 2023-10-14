@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 @font-face {
     font-family: sfu-font;
-    src: url('../font/sfu/SFUFuturaRegular.TTF') format('truetype');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Carter;
-    src: url('../font/Certer/CarterOne-Regular.ttf') format('truetype');
+    src: url('../font/sfu/SFUFuturaBook.TTF') format('truetype');
     font-weight: normal;
 }
 
@@ -22,13 +15,17 @@
     --title-color-footer: #9D503B;
     --text-color-footer: #CB9586;
     --background-color-footer: #F9F6F2;
+    --color-hover: #E4937D;
     --font-size-menu: 26px;
     --font-size-title: 120px;
     --font-text: 25px;
     --font-small-title: 30px;
     --font-title-footer: 26px;
     --font-text-footer: 20px;
-    --font-phay: 200px
+}
+
+*>a {
+    text-decoration: none !important;
 }
 
 * {
@@ -39,7 +36,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-color) !important;
 }
 
 header {
@@ -47,7 +44,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #9B4D351A;
+    background-color: var(--background-color);
 }
+
 
 header .row {
     width: 88%;
@@ -93,7 +93,6 @@ nav li {
 }
 
 nav li a {
-    text-decoration: none;
     padding: 0 10px;
     color: #9D503B;
     font-size: 1em;
@@ -102,7 +101,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #E4937D;
+    color: var(--color-hover);
 }
 
 .header-contact {
@@ -110,53 +109,32 @@ nav li a:hover {
     height: 83px;
 }
 
-/*banner*/
-.banner {
-    position: relative;
+/*main*/
+.category {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #9B4D3580;
+    border-bottom: 1px solid #9B4D3580;
+    margin-bottom: 100px;
 }
 
-.banner .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background: linear-gradient(270deg, rgba(9, 9, 9, 0.83) 0.48%, rgba(45, 43, 43, 0.00) 103.82%);
-}
-
-.banner .banner-content {
-    position: absolute;
-    z-index: 3;
-    top: 35%;
-    left: 8%;
-    width: 30%;
-}
-
-.banner .banner-content p {
-    color: var(--background-color);
-    font-family: sfu-font;
-    font-size: var(--font-small-title);
-    font-weight: normal;
-}
-
-.banner img {
-    width: 100%;
-}
-
-.banner .banner-content h1 {
-    display: inline;
+.category .main-title h1 {
+    font-size: calc(var(--font-size-title) - 40px);
     margin: 0;
-    font-weight: 500;
-    color: var(--background-color);
-    letter-spacing: 7.68px;
-    font-size: calc(var(--font-size-title) + 20px);
-}
-.banner .main-title {
-    text-align: start;
 }
 
-/*for title*/
+.category .main-title a {
+    color: var(--title-color);
+}
+
+.category .main-title a:hover {
+    color: var(--color-hover);
+}
+
+.menu {
+    padding-bottom: 80px;
+}
+
 .main-title h1 {
     margin: 150px 0px 99px 0;
     font-size: var(--font-size-title);
@@ -168,124 +146,45 @@ nav li a:hover {
     color: var(--title-color);
 }
 
-/* our-story */
-.our-story {
-    margin: 150px 0;
+.menu-product {
     display: flex;
     justify-content: space-between;
-}
-
-.our-story-img {
-    width: 50%;
-}
-
-.our-story-img img {
-    width: 100%;
-}
-
-.our-story .main-title {
-    width: 50%;
-}
-
-.our-story .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text p {
-    width: 80%;
-    text-align: center;
-    font-family: sfu-font;
-    font-size: var(--font-text);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.our-story .phay {
-    font-family: Carter;
-    font-size: var(--font-phay);
-    font-weight: 400;
-    line-height: 100px;
-    text-align: start;
-    color: var(--title-color);
-}
-
-.faith h1 {
-    font-size: calc(var(--font-size-title) - 10px);
-}
-
-.our-story .phay-duoi {
-    transform: scale(-1, -1);
-}
-
-.about-content {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*store*/
-
-.store-img-dai {
-    width: 100%;
     margin: 50px 0;
 }
+.list-two {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
 
-.store-img-dai img {
+.product {
+    width: 375px;
+    margin: 0 17px;
+}
+
+.product img {
     width: 100%;
-    object-fit: cover;
 }
 
-.store-img-content {
-    display: flex;
-}
-
-.store-imgngan {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-}
-
-.store-img-ngan-mot {
-    width: 45%;
-}
-
-.store-img-ngan-hai {
-    width: 45%;
-}
-
-.store-img-ngan-mot img,
-.store-img-ngan-hai img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.store-content {
-    width: 40%;
-}
-
-.store-content .main-title h1 {
-    margin: 0;
-}
-
-.address {}
-
-.hcr {}
-
-.pasteur {}
-
-.address p {
+.product-title {
+    margin-top: 46px;
     text-align: center;
     font-family: sfu-font;
     font-size: var(--font-text);
-    line-height: 44px;
 }
 
+.product-title a {
+    color: var(--text-color) !important;
+}
 
-/* footer */
+.product-price {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--price-color);
+    font-family: sfu-font;
+    font-size: var(--font-text);
+}
+
 footer {
     background-color: var(--background-color-footer);
     padding: 150px 0 50px 0;
@@ -356,7 +255,7 @@ footer {
 }
 
 .line {
-    padding: 50px 0 16px 0;
+    padding: 0px 0 100px 0;
     display: flex;
     justify-content: center;
 }
@@ -384,12 +283,15 @@ footer {
         --font-small-title: 20px;
         --font-title-footer: 16px;
         --font-text-footer: 13px;
-        --font-phay: 150px;
     }
-
     header {
         height: 100px;
     }
+
+    .menu {
+        padding-bottom: 75px;
+    }
+
 }
 
 @media (min-width: 1919px) {
@@ -401,5 +303,8 @@ footer {
     .container-xl,
     .container-xxl {
         max-width: 1720px !important;
+    }
+    .category .main-title h1 {
+        font-size: calc(var(--font-size-title) - 60px);
     }
 }

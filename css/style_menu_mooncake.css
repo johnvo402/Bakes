@@ -39,6 +39,10 @@ body {
     background-color: var(--background-color) !important;
 }
 
+main {
+    margin-top: 250px;
+}
+
 header {
     height: 150px;
     display: flex;
@@ -46,6 +50,10 @@ header {
     align-items: center;
     border-bottom: 1px solid #9B4D351A;
     background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
 }
 
 

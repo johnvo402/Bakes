@@ -40,7 +40,7 @@ body {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 header {
@@ -50,6 +50,10 @@ header {
     align-items: center;
     border-bottom: 1px solid #9B4D351A;
     background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%;
 }
 
 
@@ -231,15 +235,11 @@ nav li a:hover {
 .special-text p {
     text-align: justify;
     font-family: sfu-font;
-    font-size:var(--font-text);
+    font-size: var(--font-text);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-bottom: 40px;
-}
-
-.hidden {
-    display: none;
 }
 
 .care {
@@ -258,12 +258,13 @@ nav li a:hover {
 .care-text p {
     text-align: justify;
     font-family: sfu-font;
-    font-size:var(--font-text);
+    font-size: var(--font-text);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-bottom: 40px;
 }
+
 .storage h3 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
@@ -273,24 +274,29 @@ nav li a:hover {
     margin: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .storage-text p {
     text-align: justify;
     font-family: sfu-font;
-    font-size:var(--font-text);
+    font-size: var(--font-text);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-bottom: 40px;
 }
 
-.special:hover .special-text{
-    display: block;
-}
-.care:hover .care-text{
+.special:hover .special-text {
     display: block;
 }
 
-.storage:hover .storage-text{
+.care:hover .care-text {
+    display: block;
+}
+
+.storage:hover .storage-text {
     display: block;
 }
 
@@ -345,6 +351,7 @@ nav li a:hover {
     width: 100%;
     text-align: center;
 }
+
 .more-button button {
     font-family: sfu-font;
     font-weight: 400;

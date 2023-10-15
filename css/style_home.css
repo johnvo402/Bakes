@@ -34,11 +34,21 @@ body {
     background-color: var(--background-color);
 }
 
+main {
+    margin-top: 150px;
+}
+
 header {
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    border-bottom: 1px solid #9B4D351A;
+    background-color: var(--background-color);
+    top: 0;
+    z-index: 3;
+    width: 100%;
 }
 
 header .row {
@@ -509,6 +519,10 @@ footer {
     }
     header {
         height: 100px;
+    }
+
+    main {
+        margin-top: 100px;
     }
 
     .mooncake {

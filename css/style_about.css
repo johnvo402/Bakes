@@ -39,7 +39,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-color) !important;
 }
 
 main {
@@ -168,7 +168,7 @@ nav li a:hover {
 
 /*for title*/
 .main-title h1 {
-    margin: 150px 0px 99px 0;
+    margin: 150px 0px 100px 0;
     font-size: var(--font-size-title);
     font-style: normal;
     font-family: 'Big Shoulders Display', cursive;
@@ -197,14 +197,20 @@ nav li a:hover {
     width: 50%;
 }
 
-.our-story .text {
+.our-story .main-title .text {
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.text p {
+.about-content .text {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text p {
     text-align: center;
     font-family: sfu-font;
     font-size: var(--font-text);
@@ -222,8 +228,14 @@ nav li a:hover {
     color: var(--title-color);
 }
 
+.faith {
+    padding: 28px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+
 .faith h1 {
-    font-size: calc(var(--font-size-title) - 10px);
+    font-size: calc(var(--font-size-title) - 30px);
 }
 
 .our-story .phay-duoi {
@@ -234,14 +246,29 @@ nav li a:hover {
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+.our-story .main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.our-story .main-title h1 {
+    width: 80%;
 }
 
 /*store*/
 
+.sesstion-store {
+    padding: 50px 0;
+}
+.store {
+    margin: 64px 0;
+}
 .store-img-dai {
     width: 100%;
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
 .store-img-dai img {
@@ -275,6 +302,10 @@ nav li a:hover {
 
 .store-content {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .store-content .main-title h1 {
@@ -366,7 +397,7 @@ footer {
 }
 
 .line {
-    padding: 50px 0 16px 0;
+    padding: 50px 0 75px 0;
     display: flex;
     justify-content: center;
 }
@@ -402,6 +433,16 @@ footer {
     }
     main {
         margin-top: 100px;
+    }
+
+    .faith {
+        /* padding: 16px 0; */
+        margin: 0 auto;
+        width: 90%;
+    }
+    .faith h1 {
+        margin: 80px 0px;
+        font-size: calc(var(--font-size-title) - 20px);
     }
 }
 

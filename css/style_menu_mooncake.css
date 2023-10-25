@@ -119,6 +119,107 @@ nav li a:hover {
 }
 
 /*main*/
+
+.order-item {
+    padding: 200px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-img {
+    width: 50%;
+}
+
+.order-img img {
+    width: 80%;
+}
+
+.order-content {
+    width: 50%;
+}
+
+.order-content .today {
+    color: var(--MU-CH, #454545);
+    font-family: Big Shoulders Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.64px;
+}
+
+.order-content .main-title h1 {
+    text-align: start;
+    margin: 0;
+}
+
+.price-review {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.cart .price {
+    color: var(--MU-PH, #9B4D35);
+    font-family: Big Shoulders Display;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2.475px;
+}
+
+.cart svg {
+    width: 40px;
+    height: 40px;
+}
+
+
+.selled {
+    color: #B67968;
+    font-family: sfu-font;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    width: 80%;
+    margin: 32px 0;
+}
+
+
+.description p {
+    font-family: sfu-font;
+    font-size: var(--font-text);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cart {
+    display: flex;
+    gap: 40px;
+}
+
+.cart button {
+    background-color: var(--title-color);
+    color: var(--background-color);
+    padding: 16px 40px;
+    border: none;
+}
+
+.order-detail {
+    width: 50%;
+}
+
+.change-slide {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+
 .category {
     display: flex;
     justify-content: space-around;
@@ -161,6 +262,7 @@ nav li a:hover {
     justify-content: space-between;
     margin: 50px 0;
 }
+
 .list-two {
     width: 50%;
     text-align: center;
@@ -171,9 +273,11 @@ nav li a:hover {
     width: 375px;
     margin: 0 17px;
 }
+
 .product .product-img {
     position: relative;
 }
+
 .product .overlay {
     position: absolute;
     background-color: #9d503b78;
@@ -190,7 +294,7 @@ nav li a:hover {
 .product button {
     color: var(--title-color);
     font-family: 'Big Shoulders Display', cursive;
-    font-size: calc(var(--font-text) + 8px );
+    font-size: calc(var(--font-text) + 8px);
     text-align: center;
     padding: 0px 28px;
     border-radius: 10px;
@@ -296,7 +400,6 @@ footer {
 }
 
 .line {
-    padding: 0px 0 100px 0;
     display: flex;
     justify-content: center;
 }
@@ -304,7 +407,7 @@ footer {
 .line div {
     text-align: center;
     display: inline;
-    width: 344px;
+    width: 300px;
     height: 2px;
     background-color: #CB9587;
 }
@@ -325,6 +428,7 @@ footer {
         --font-title-footer: 16px;
         --font-text-footer: 13px;
     }
+
     header {
         height: 100px;
     }
@@ -332,6 +436,19 @@ footer {
     .menu {
         padding-bottom: 75px;
     }
+
+    .change-slide svg {
+        width: 100px;
+    }
+
+    .order-content .today {
+        font-size: 32px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+    
 
 }
 
@@ -345,6 +462,7 @@ footer {
     .container-xxl {
         max-width: 1720px !important;
     }
+
     .category .main-title h1 {
         font-size: calc(var(--font-size-title) - 70px);
     }
